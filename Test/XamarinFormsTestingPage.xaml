@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:XamarinFormsEffects;assembly=XamarinFormsEffects"
+             xmlns:local="clr-namespace:XamarinFormsEffects.Test"
+			 BindingContext="{x:Static local:ViewModelLocator.ViewModel}"
+             x:Class="XamarinFormsEffects.Test.XamarinFormsTestingPage">
+	<ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0"
+                Android="0, 0, 0, 0"
+                WinPhone="0, 0, 0, 0" />
+  </ContentPage.Padding>
+  <StackLayout BackgroundColor="White" VerticalOptions="Center" Padding="10">
+    <Entry Text="{Binding Input}" Placeholder="Enter some text">
+	   <Entry.Effects>
+	        <effects:CapitalizeKeyboardEffect/>
+	    </Entry.Effects>
+	</Entry>
+  </StackLayout>
+</ContentPage>

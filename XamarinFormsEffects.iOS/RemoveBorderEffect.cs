@@ -4,22 +4,22 @@ using XamarinFormsEffects.iOS;
 using UIKit;
 using Foundation;
 
-[assembly: ExportEffect(typeof(CapitalizeKeyboardEffect), nameof(CapitalizeKeyboardEffect))]
+[assembly: ExportEffect(typeof(RemoveBorderEffect), nameof(RemoveBorderEffect))]
 
 namespace XamarinFormsEffects.iOS
 {
     [Preserve]
-	public class CapitalizeKeyboardEffect : PlatformEffect
+	public class RemoveBorderEffect : PlatformEffect
 	{
-        private UITextAutocapitalizationType _old;
+        private UITextBorderStyle _old;
 
 		protected override void OnAttached()
 		{
             var editText = Control as UITextField;
 			if (editText != null)
 			{
-                _old = editText.AutocapitalizationType;
-                editText.AutocapitalizationType = UITextAutocapitalizationType.AllCharacters;
+                _old = editText.BorderStyle;
+                editText.BorderStyle = UITextBorderStyle.None;
 			}
 		}
 
@@ -27,7 +27,7 @@ namespace XamarinFormsEffects.iOS
 		{
 			var editText = Control as UITextField;
 			if (editText != null)
-				editText.AutocapitalizationType = _old;
+				editText.BorderStyle = _old;
 		}
 	}
 }

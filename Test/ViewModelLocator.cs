@@ -5,16 +5,27 @@ namespace XamarinFormsEffects.Test
 {
 	public class ViewModel : INotifyPropertyChanged
 	{
-		private string _input;
-		public string Input
-		{
-            get { return _input; }
-			set
-			{
-				_input = value;
-				NotifyChanged();
-			}
-		}
+        private string _removeBorderInput;
+        public string RemoveBorderInput
+        {
+            get { return _removeBorderInput; }
+            set
+            {
+                _removeBorderInput = value;
+                NotifyChanged();
+            }
+        }
+
+        private string _capitalizedInput;
+        public string CapitalizedInput
+        {
+            get { return _capitalizedInput; }
+            set
+            {
+                _capitalizedInput = value;
+                NotifyChanged();
+            }
+        }
 
 		public event PropertyChangedEventHandler PropertyChanged;
 

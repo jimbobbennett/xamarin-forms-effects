@@ -29,6 +29,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CapitializeKeyboardEffect.cs" />
+    <Compile Include="RemoveBorderEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

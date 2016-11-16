@@ -6,7 +6,6 @@ using XamarinFormsEffects.Droid;
 using Android.Runtime;
 using System.Linq;
 
-[assembly: ResolutionGroupName("XamarinFormsEffects")]
 [assembly: ExportEffect(typeof(CapitalizeKeyboardEffect), nameof(CapitalizeKeyboardEffect))]
 
 namespace XamarinFormsEffects.Droid

@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsEffects.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsEffects.Droid", "XamarinFormsEffects.Droid\XamarinFormsEffects.Droid.csproj", "{DF46A942-068E-47D3-8F46-82EAB3E0D671}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{BEEE1B06-D9B5-4AB7-9B45-2268AC6460AE}"
+	ProjectSection(SolutionItems) = preProject
+		Effects.nuspec = Effects.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
